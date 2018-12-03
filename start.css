@@ -1,0 +1,66 @@
+body,
+html { 
+  margin: 0;
+  height: 100%; 
+  width: 100%;  
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: url(header.jpg) no-repeat center center;
+  background-size: cover; 
+  overflow: hidden;  
+}
+
+.start {
+  height: 100vh;  
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-evenly;   
+}
+
+.heading h1 { 
+  padding-top: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.modal-btn {  
+  /* border: 1px solid #fff; */
+   text-align: center; 
+   padding-top: 20px;  
+}
+
+.modal-btn .btn {
+  background-color: #F05F44;
+  border-radius: 40px; 
+  text-transform: uppercase;
+  padding:20px 30px;
+  border: none; 
+  color: #fff; 
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;  
+}
+
+.modal-btn .btn {
+  animation: button 3s ease-in-out 3s infinite;
+}
+
+@keyframes button {
+  to {
+    transform: scale(1.1);
+    transition: 1s ease;
+  } 
+  from {
+    transform: none;
+  } 
+}
+
+.modal-btn .btn:hover {
+  transform: scale(1.1);
+  transition: 1s ease;
+}
